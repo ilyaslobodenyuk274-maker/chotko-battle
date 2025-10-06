@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Открытие кейса - CHOTKO BATTLE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="main-title">CHOTKO BATTLE</h1>
+            <p class="subtitle">ОТКРЫТИЕ КЕЙСА</p>
+        </header>
+
+        <div class="case-opening-page">
+            <div class="selected-case-info">
+                <div class="case-preview-large">
+                    <div class="case-image-large">
+                        <div class="case-icon">📦</div>
+                    </div>
+                    <div class="case-details-large">
+                        <h2 id="large-case-name">MIRAGE CASE</h2>
+                        <div class="case-price-large" id="large-case-price">100 ₽</div>
+                        <div class="case-items-count" id="large-case-items">39 предметов</div>
+                    </div>
+                </div>
+                
+                <div class="balance-info-opening">
+                    Баланс: <span class="balance-amount">1000</span> ₽
+                    <button class="back-btn" onclick="goBack()">← Назад</button>
+                </div>
+            </div>
+
+            <div class="opening-interface">
+                <div class="items-track-container">
+                    <div class="selection-indicator"></div>
+                    <div class="items-track" id="items-track">
+                    </div>
+                </div>
+                
+                <div class="opening-controls">
+                    <button id="open-case-btn" class="open-case-btn-large">Открыть кейс</button>
+                    
+                </div>
+            </div>
+
+            <div id="result-section" class="result-section hidden">
+            </div>
+        </div>
+    </div>
+
+    <script src="case-opening.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHOTKO BATTLE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="main-title">CHOTKO BATTLE</h1>
+            <p class="subtitle">У НАС ВЫИГРЫВАЮТ</p>
+        </header>
+
+        <nav class="nav">
+            <div class="nav-item" data-section="upgrade">АПГРЕЙД</div>
+            <div class="nav-item" data-section="contracts">KOHTPAKTЫ</div>
+            <div class="nav-item" data-section="giveaways">POЗЫГРЫШИ</div>
+            <div class="nav-item" data-section="tournaments">ТУРНИРЫ</div>
+        </nav>
+
+        <div class="bonus-section">
+            <p class="bonus-text">Используй ПРОМОКОД:</p>
+            <div class="promo-code">AURA-20</div>
+        </div>
+
+        <input type="text" class="search-filter" placeholder="Поиск">
+
+        <main>
+           <section id="upgrade" class="content-section active">
+    <div class="items-grid">
+        <div class="item-card">
+            <div class="item-icon">USP-S</div>
+            <div class="item-name">StartTrak™ USP-S</div>
+            <div class="item-skin">Извилины</div>
+        </div>
+        <div class="item-card">
+            <div class="item-icon">M4A4</div>
+            <div class="item-name">M4A4</div>
+            <div class="item-skin">Король драконов</div>
+        </div>
+        <div class="item-card">
+            <div class="item-icon">GALLI</div>
+            <div class="item-name">GallI AR</div>
+            <div class="item-skin">Хроматическая аберрация</div>
+        </div>
+        <div class="item-card">
+            <div class="item-icon">SSG 08</div>
+            <div class="item-name">SSG 08</div>
+            <div class="item-skin">Кровь в воде</div>
+        </div>
+    </div>
+</section>
+
+        <section id="contracts" class="content-section">
+    <h2 class="section-title">КЕЙСЫ</h2>
+    
+
+    
+    <div class="cases-selection">
+        <div class="case-option" onclick="openCase('mirage')">
+            <div class="case-image">
+                <div class="case-text">MIRAGE</div>
+            </div>
+            <div class="case-info">
+                <div class="case-name">MIRAGE CASE</div>
+                <div class="case-price">100 ₽</div>
+                <div class="case-items">39 предметов</div>
+                <button class="select-case-btn">Выбрать</button>
+            </div>
+        </div>
+        
+        <div class="case-option" onclick="openCase('nuke')">
+            <div class="case-image">
+                <div class="case-text">NUKE</div>
+            </div>
+            <div class="case-info">
+                <div class="case-name">NUKE CASE</div>
+                <div class="case-price">150 ₽</div>
+                <div class="case-items">39 предметов</div>
+                <button class="select-case-btn">Выбрать</button>
+            </div>
+        </div>
+        
+        <div class="case-option" onclick="openCase('ancient')">
+            <div class="case-image">
+                <div class="case-text">ANCIENT</div>
+            </div>
+            <div class="case-info">
+                <div class="case-name">ANCIENT CASE</div>
+                <div class="case-price">200 ₽</div>
+                <div class="case-items">37 предметов</div>
+                <button class="select-case-btn">Выбрать</button>
+            </div>
+        </div>
+    </div>
+</section>
+            <section id="giveaways" class="content-section">
+                <h2 class="section-title">РОЗЫГРЫШИ</h2>
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide active">
+                            <h3>Розыгрыш AK-47 | Красная линия</h3>
+                            <p>Участвуй и выигрывай!</p>
+                        </div>
+                        <div class="slide">
+                            <h3>Розыгрыш AWP | Дракон Лора</h3>
+                            <p>Только для премиум пользователей</p>
+                        </div>
+                        <div class="slide">
+                            <h3>Розыгрыш ножа | Бабочка</h3>
+                            <p>Шанс выиграть легендарный нож</p>
+                        </div>
+                    </div>
+                    <div class="slider-controls">
+                        <button class="slider-btn prev">←</button>
+                        <div class="slider-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <button class="slider-btn next">→</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tournaments" class="content-section">
+                <h2 class="section-title">ТУРНИРЫ</h2>
+                <div class="video-player-container">
+                    <div class="video-player">
+                        <video id="main-video" src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4"></video>
+                        <div class="video-controls">
+                            <button class="control-btn play-pause">▶</button>
+                            <div class="time-display">
+                                <span class="current-time">0:00</span> / <span class="duration">0:00</span>
+                            </div>
+                            <input type="range" class="progress-bar" value="0" min="0" max="100">
+                            <button class="control-btn volume-btn">🔊</button>
+                            <input type="range" class="volume-slider" value="100" min="0" max="100">
+                            <button class="control-btn fullscreen-btn">⛶</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="balance-section">
+            <span class="balance-bonus">+20%</span>
+            <button class="balance-btn">Пополнить</button>
+        </div>
+
+        <div id="balance-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Пополнение баланса</h2>
+                <form id="balance-form" class="balance-form">
+                    <div class="form-group">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+375-XX-XXX-XX-XX" required>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Пол:</label>
+                        <div class="gender-options">
+                            <label>
+                                <input type="radio" name="gender" value="male" required>
+                                Мужской
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="female" required>
+                                Женский
+                            </label>
+                        </div>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="amount">Сумма пополнения:</label>
+                        <input type="number" id="amount" name="amount" placeholder="Введите сумму" min="1" required>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <button type="submit" id="submit-btn" class="submit-btn" disabled>Пополнить баланс</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>CHOTKO BATTLE</h3>
+            </div>
+            <div class="footer-info">
+                <p>Слободенюк Илья Андреевич</p>
+                <p>Т-292</p>
+                <p>2025 год</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com" target="_blank" class="social-link">GitHub</a>
+                <a href="https://vk.com" target="_blank" class="social-link">VK</a>
+                <a href="https://t.me" target="_blank" class="social-link">Telegram</a>
+                <a href="mailto:example@mail.com" class="social-link">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
